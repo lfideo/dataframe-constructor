@@ -23,6 +23,7 @@ os.chdir("/Users/lfideo/Desktop/***/crm/data")
 path = os.getcwd()
 file_list = glob.glob(path + '/*.csv')     
 
+# a list that collects dataframes
 li = []
 for file in file_list:
     df = pd.read_csv(file, dtype='object', index_col=None, header=0)

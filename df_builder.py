@@ -4,7 +4,8 @@ import glob
 import pandas as pd
 import numpy as np
 
-os.getcwd()
+# prints current directory
+print(os.getcwd())
 
 # changes current directory
 os.chdir('/Users/lfideo/Downloads')
@@ -28,5 +29,3 @@ for file in file_list:
     li.append(df)
 
 crm = pd.concat(li, axis=0, ignore_index=True)
-
-crm.head()
